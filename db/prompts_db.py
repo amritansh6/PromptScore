@@ -17,7 +17,7 @@ class PromptsDb:
                                   (id INTEGER PRIMARY KEY, prompt TEXT, NUMBER_CONSTRAINTS INTEGER, CONSTRAINT_COMPLEXITY INTEGER, PROMPT_COMPLEXITY INTEGER)''')
         self.conn.commit()
 
-    def add_prompt(self, prompt, NUMBER_CONSTRAINTS, PROMPT_COMPLEXITY, CONSTRAINT_COMPLEXITY):
+    def add_prompt(self, prompt, NUMBER_CONSTRAINTS, CONSTRAINT_COMPLEXITY, PROMPT_COMPLEXITY):
         """
         This function is used to add prompts to the db.
         :param prompt: TEXT
@@ -26,9 +26,10 @@ class PromptsDb:
         :param CONSTRAINT_COMPLEXITY: Score for Constraint Complexity.
         :return:
         """
+
         cursor = self.conn.cursor()
         cursor.execute(
-            "INSERT INTO prompts (prompt, NUMBER_CONSTRAINTS,CONSTRAINT_COMPLEXITY,PROMPT_COMPLEXITY) VALUES (?, ?)",
+            "INSERT INTO prompts (prompt, NUMBER_CONSTRAINTS,CONSTRAINT_COMPLEXITY,PROMPT_COMPLEXITY) VALUES (?, ?, ?, ?)",
             (prompt, NUMBER_CONSTRAINTS, CONSTRAINT_COMPLEXITY, PROMPT_COMPLEXITY))
         self.conn.commit()
 
@@ -49,4 +50,13 @@ class PromptsDb:
         Close the database connection.
         """
         self.conn.close()
+
+
+    def delete_all_prompts(self):
+        """
+        Delete all prompts from the database.
+        """
+        cursor = self.conn.cursor()
+        cursor.execute("DELETE FROM prompts")
+        self.conn.commit()
 
