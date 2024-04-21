@@ -1,3 +1,4 @@
+import argparse
 import csv
 from db import prompts_db
 from db.prompts_db import PromptsDb
@@ -19,6 +20,8 @@ class CsvImporter:
 if __name__ == '__main__':
     db_name = 'prompts.db'
     csv_file = 'Prompts_Amritansh.csv'
+    parser = argparse.ArgumentParser(description='PromptScore')
+    parser.add_argument('')
     #db.delete_all_prompts()
 
     db = PromptsDb(db_name)
@@ -28,7 +31,7 @@ if __name__ == '__main__':
 
     all_prompts = db.get_prompts()
     #print(all_prompts[1])
-    gpt3 = OpenAIGPT3(all_prompts, "Write a story about bhopal", "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")
+    gpt3 = OpenAIGPT3(all_prompts, "Develop a science fiction story set on a distant planet inhabited by sentient alien beings, where a human astronaut crash-lands and must form an unlikely alliance with the native creatures to survive and find a way back home.", "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")
     response=gpt3.teach_model()
     #response=gpt3.score_prompt("Write a story which contains a dragon")
     print(response)
