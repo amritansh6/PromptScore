@@ -1,8 +1,9 @@
 import openai
 import os
 
+
 class OpenAIGPT3:
-    def __init__(self, prompts, example_prompt,api_key):
+    def __init__(self, prompts, example_prompt, api_key):
         self.prompts = prompts
         self.example_prompt = example_prompt
         self.api_key = api_key  # Get API key from environment variable
@@ -20,7 +21,7 @@ class OpenAIGPT3:
             final_prompt_for_training = msg
             for prompt in prompts[4:]:
                 final_prompt_for_training += f"{prompt[0]}{prompt[1]}{prompt[2]}{prompt[3]}"
-            final_prompt_for_training += "Now based on the criteria give score for :"+ self.example_prompt +"Output just the scores"
+            final_prompt_for_training += "Now based on the criteria give score for :" + self.example_prompt + "Output just the scores without explantion"
 
             response = openai.chat.completions.create(
                 model=self.engine,
@@ -30,6 +31,17 @@ class OpenAIGPT3:
         except Exception as e:
             print(f"An error occurred: {e}")
             return None
+
+    def get_prompt_score(self, response):
+        message_content = response.choices[0].message.content
+        print(message_content)
+        if len(message_content) ==3:
+            digits = [int(char) for char in message_content]
+            # Calculate the average of the digits
+            average = sum(digits) / len(digits)
+            return average
+
+        return None
 
     def chat(self):
         # Implement chat functionality if needed
