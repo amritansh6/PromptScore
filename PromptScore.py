@@ -48,9 +48,6 @@ if __name__ == '__main__':
     csv_file = 'Prompts_Amritansh.csv'
     parser = argparse.ArgumentParser(description='PromptScore')
 
-    # parser.add_argument('')
-    # db.delete_all_prompts()
-
     db = PromptsDb(db_name)
     db.delete_all_prompts()
     importer = CsvImporter(csv_file)
@@ -60,27 +57,24 @@ if __name__ == '__main__':
     all_prompts = all_prompts[2:]
     inputs, labels = encode_data(all_prompts)
     input_to_bert = prepare_data_for_bert(inputs)
-    # labels_tensor = torch.tensor(labels)
 
     model = BertRegressor()
     dataLoader = getDataset()
     train_loader, val_loader = dataLoader.getDataLoader(input_to_bert, labels)
     trainer = Trainer(model, train_loader, val_loader, torch.nn.MSELoss())
-    trainer.fine_tuning()
 
-    best_model=trainer.load_checkpoint('checkpoints/best_model.pt')
-    prompt="Write a story about bhopal"
+    trainer.load_checkpoint('checkpoints/best_model.pt')
+    prompt="Write a story about a boy in about 500 words"
     encoding=tokenizer(prompt, return_tensors='pt', padding=True, truncation=True, max_length=512)
     input_ids = encoding['input_ids']
-    output=best_model(input_ids)
-    print(output)
+    print(trainer.evaluate_prompt(input_ids))
 
     # #print(all_prompts[1])
-    # gpt3 = OpenAIGPT3(all_prompts, "Write a story with the following constraint: ach paragraph starts with Within these. Total of 6 paragraphs. Each paragraph consists of exactly 6 sentences. Total word count: 150-160 words.Must include the phrase fading memories.", "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")
-    # response=gpt3.teach_model()
-    # #print(response)
-    # #response=gpt3.score_prompt("Write a story which contains a dragon")
-    # prompt_score=gpt3.get_prompt_score(response)
+    gpt3 = OpenAIGPT3(all_prompts, "Write a story about a boy in about 500 words", "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")
+    response=gpt3.teach_model()
+    print(response)
+    #response=gpt3.score_prompt("Write a story about a boy in about 500 words")
+    prompt_score=gpt3.get_prompt_score(response)
     # print(prompt_score)
 
     db.close()

@@ -6,8 +6,8 @@ class OpenAIGPT3:
     def __init__(self, prompts, example_prompt, api_key):
         self.prompts = prompts
         self.example_prompt = example_prompt
-        self.api_key = api_key  # Get API key from environment variable
-        self.engine = "gpt-4-turbo-preview"  # Update to the latest engine
+        self.api_key = api_key
+        self.engine = "gpt-4-turbo-preview"
 
         if not self.api_key:
             raise ValueError("OpenAI API key not found. Set OPENAI_API_KEY environment variable.")

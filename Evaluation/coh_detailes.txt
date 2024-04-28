@@ -1,0 +1,33 @@
+You will be given a story generated for a given prompt.
+
+Your task is to rate the story on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Constraints Satisfied (1-5) - the prompt given for story generation contains some constraints your task is to match number of constraints satisfied in the story.
+
+Evaluation Steps:
+
+1. Read the story and the prompt carefully.
+2. Read the summary and evaluate whether the constraints are satisfied. Check if the story aligns with the number of words it has to satisfy etc, and themes satisfied or not.
+3. Assign a score for consistency based on the Evaluation Criteria.
+
+
+Example:
+
+
+Prompt:
+
+{{Prompt}}
+
+Story:
+
+{{Story}}
+
+
+Evaluation Form (scores ONLY):
+
+- Constraints:

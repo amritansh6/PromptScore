@@ -1,3 +1,4 @@
+import torch
 from torch import nn
 from transformers import BertModel
 
@@ -14,6 +15,7 @@ class BertRegressor(nn.Module):
         )
 
     def forward(self, input_ids, attention_mask=None, token_type_ids=None):
+        attention_mask = torch.zeros_like(input_ids)
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
         pooled_output = outputs.pooler_output
         scores = self.mlp(pooled_output)

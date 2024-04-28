@@ -3,7 +3,6 @@ import os
 import torch
 from torch import optim
 
-
 class Trainer:
     def __init__(self, model, train_loader, val_loader, criterion, num_epochs=10, learning_rate=0.001,checkpoint_dir='checkpoints'):
         self.model = model
@@ -67,3 +66,10 @@ class Trainer:
             if val_loss < best_val_loss:
                 best_val_loss = val_loss
                 self.save_checkpoint(epoch, best=True)
+
+    def evaluate_prompt(self, input_ids):
+        self.model.eval()
+        #input_ids = tokenizer(prompt, return_tensors='pt', padding=True, truncation=True, max_length=512)['input_ids']
+        with torch.no_grad():
+            output = self.model(input_ids)
+        return output

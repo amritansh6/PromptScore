@@ -12,7 +12,7 @@ class getDataset():
             [float(score) if score else 0 for score in sublist]
             for sublist in labels
         ]
-        input_ids=inputs['input_ids']
+        input_ids = inputs['input_ids']
         labels_tensor = torch.tensor(labels, dtype=torch.float)
         dataset = TensorDataset(input_ids, labels_tensor)
         train_size = int(0.8 * len(dataset))
