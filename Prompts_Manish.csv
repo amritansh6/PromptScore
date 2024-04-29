@@ -1,0 +1,525 @@
+Prompt,#constraints,Constraint Complexity,Clarity,Prompt Complexity
+Write a story about a parrot. Number of lines should be 5 each ending with forest.,2,2,5,2
+Teach a student about the image generation process by AI.,1,2,5,1
+Describe a place which is full of students with different background waiting outside an exam hall.,2,1,5,1
+You are an agent responsible for serving food in a restaurant. Describe how would you serve.,1,1,4,1
+"Find out the numbers divisible by both 3 and 4 from list [2,8,12,15,24]",1,1,5,1
+Write a code to take user's height and weight and finding BMI,1,1,4,2
+Explain how the aelopathic medicines work in the human body,1,1,4,2
+Write a biography of Mahatama Gandhi,1,1,5,1
+"Calculate mean of the following list [12,13,14,17,1]",1,1,5,1
+Complete the following story in 3 paragraphs. Smith lived with his parents when young. He moved to MIT for graduation. Later he worked for Germany governemnt.,2,2,4,2
+Write a step by step guide to book flight tickets from TripAdvisor.com,1,2,5,2
+Write a narrative starting and ending with following sentence respectively. Starting: Everyone gathered. Ending: They had a good dinner,2,3,4,3
+Write a story about an burglary in the San Francisco during day time on 11 September 2018.,2,2,4,2
+"Write a story in 10 lines. Each line starting with ""I can"" and ""I can't"" alternatively.",3,3,5,3
+"Write an emotional story expressing love about a person without using the word ""love""",2,3,4,2
+Describe a retrospective meeting notes with an engineering manager in the payments team.,2,2,5,3
+"Write a story starting with ""Et Tu, Brute?""",1,2,4,2
+Write a story about an educational institution that doesn't provide education.,2,2,5,1
+Write a story in reverse choronological order where every line has odd number of words. The story should be about sunrise in a hilly region.,3,3,4,3
+Write a story in which a person eats something which he shouldn't and dies later but the reason is still uncertain,2,2,4,2
+Write a story about hypothetical world where everything has a mirror surface but people don't know or use mirror for viewing their face.,2,3,5,3
+Write a story about bus scandal in which men fight with each other. The story should not involve the bus driver. But it should involve the olderly passenger which was sitting on the last seat of the bus.,4,3,4,4
+Write a story about a student who went missing from the school. The police found it after 10 days. But the student was alive. The story should provide no clue how the student managed to survive for 10 days without food.,4,4,5,4
+Write a story in 7 sentences about a place where no one lived for last 100 years. However before that it was full of population. Dont touch upon how the population migrated/died.,3,3,5,3
+Write a story from a security camera POV. How it would describe a burglary event in the house with more than 10 members during daytime.,2,2,4,2
+Write a dialogue conversation between two friends discussing about different coding paradigms. The first person always talks about space complexity but the other talks about time complexity.,2,3,5,3
+Set a story in an haunted house. It had 2 members. The house becomes haunted after one of them is killed in some event. The story should not emphasize on how one of them was killed. ,3,3,4,3
+Write a story about a family vacation on Goa trip. The trip ended for 3 days starting 25 December 2015. It should exaggerate on how they spent more money on drinking than anything else.,3,2,5,2
+Write a story in which the kids never sleep. There are a total of 14 kids with each having some super natural power like writing with both hands. ,2,2,4,3
+Write a story in which aliens are seen in a spaceship landing on the banks of river Ganges. It was midnight but people were there to witness the event,2,3,4,3
+"Write about a person whose relationship with social media changed over the past five years, describing in one sentence about each year? The relationship should go from the positive direction to the negative.
+",3,3,5,4
+Start your story with one or two characters going for a run.,2,2,4,2
+Complete the following story in exactly 10 more words: You confront the monster you’ve spent many long years hunting. Except they’re not exactly what you thought they’d be…,2,3,5,3
+"Set your story in New York, where someone’s been waiting for your character.",2,3,5,2
+"Cast a magician (a real one, or a party entertainer) as your story’s protagonist. It should have even number of words in each sentence. ",2,3,4,4
+"Start your story with the line, “You wanna do something fun?”",1,1,5,1
+Begin your story with a character crashing into something (or someone) while skiing.,1,1,5,1
+"Write a story about a character on a quest, trying to ""prove themselves."" It should be set as  an adventure in a small town.",2,2,4,2
+Write a story about someone who started a road trip ten years ago and hasn't stopped since. But now starving for comback to his home country.,2,2,5,2
+Begin your story with the sensation of a breeze brushing against a character's skin.,1,1,5,1
+Write a story inspired by the phrase “Back to square one.”,1,2,4,2
+Write about a time that you were lost (metaphorically or literally).,1,1,5,1
+"Write about a person whose relationship with social media changed over the past five years, describing in one sentence about each year? The relationship should go from the positive direction to the negative.",2,3,4,3
+Do you think that human nature is inherently good or evil? Or none of the above? Explain your reasoning.,1,2,4,2
+"Write about a character who is pathologically ambivalent, until something shakes them up.",2,2,4,2
+Write about a couple touring an empty apartment they might rent.,1,1,5,1
+End your story with a character looking out on a new horizon.,1,1,4,2
+Write your story from the point of view of someone learning or teaching an extreme hobby.,1,2,5,2
+"Set your story in a post-pandemic world, where the effects are still felt even as your character attempts to move on.",2,3,4,3
+Write a story based on the metaphor: “Chaos is a friend of mine.”,1,2,5,2
+Write a letter to your future self in five years. Start your story with “Today’s the day I change.” Story should be positively set.,2,3,4,3
+Write about a child who carries on their parent’s work or legacy in some form.,2,2,4,2
+Write about someone who’s desperately trying to change their luck. The story should show the steps took and the effect observed.,2,3,5,3
+"Write about someone who gets an inheritance from a relative they’ve never heard of, but they’ll need to do something completely outside their comfort zone in order to collect it.",3,3,2,4
+"Write about someone who didn’t get along with their family as a child, but has since found an appreciation for them.",2,2,4,3
+"Write a story in about 5-6 sentences. Start your story with the line, “By the time I stepped outside, the leaves were on fire.” (Whether this is a literal fire is up to you.)",3,2,5,2
+Write a story about two people meeting during unusual circumstances and becoming fast friends.,2,2,4,2
+"Write about two characters who each want to change the same thing, but resolve to go about it in very different ways.",2,3,5,3
+Write about someone who never planned to make history but is now about to deliver a speech in front of millions.,2,2,4,2
+"Write a story about two people who need each other, but are too stubborn to admit it.",2,3,5,3
+"Write about an introvert and an extrovert who are best friends. They had past meet-ups, but this time it's going to be very different.",3,3,5,3
+"An intelligent young girl solves a big problem, but becomes frustrated that no one wants to believe her. Write about what she does next.",2,3,4,2
+Write a story that begins and ends with someone looking up at the stars.,2,1,5,1
+Write a story about someone posting a video on social media that goes viral. The story should be about some dish. The story should show the fans arguing amongs themselves.,3,2,4,2
+Write about someone who always comes to the aid of others.,1,1,5,1
+Write a story that ends in the past. The story should start with the future though.,1,2,5,2
+Write a story about a character making a big change. The character should be taken from marvel DC.,2,2,4,2
+Write a story about a character experiencing independence for the first time. Story should be set in New York City. The traffic should create a big chaos in the story.,3,3,5,3
+"Write about the moment a child (of any age) first comes to view a parent as a three-dimensional human being, and not just a parental figure.",1,3,5,4
+"A ""good witch"" and a ""bad witch"" meet for lunch. What do they talk about? Complete this story in about 10 sentences. The story should show the conversation among them.",2,3,4,3
+Write a story that blurs the line between the protagonist's reality and their dreams.,1,3,5,2
+Write a story about someone at a shopping mall. Use only their stream of consciousness to tell the story.,2,4,4,4
+Write a story about a mundane day. Use only your prose to make it exciting.,2,3,4,3
+"Write a story with a Character versus Technology conflict. Think of Humanity vs. robots in I, Robot.",2,2,2,2
+Write a story about an isolated village that has had no contact with the outside world and the inhabitants' response to an unexpected arrival.,2,2,4,2
+"Write a story about a writer writing a story, and the strange events that unfold when there's a knock at the door that interrupts them at the end of the first paragraph.",2,3,4,3
+"Describe each day of the week as if it were a person. Give each one personality traits, a job, and a goal. Write a story about them.",2,3,5,2
+This was the weekend you'd been waiting for for the past three years. Write about such a story. You should be very longing for this day. ,1,2,5,1
+"Complete the following story in 100 words. Your family’s holiday dinners always end with everyone at each other’s throats. This year you’re determined to keep a low profile, but your patience is being put to the test.",3,3,2,3
+"Write a story about somebody trying to rationalize giving into temptation, even though they know they shouldn’t.",2,3,1,2
+"Your character finally gives into a temptation they've been avoiding, and becomes better because of it. At some point in your story, a character says “You’re better than this…”.
+",3,4,3,4
+"Your family’s holiday dinners always end with everyone at each other’s throats. This year you’re determined to keep a low profile, but your patience is being put to the test. Complete this story.",2,3,2,2
+"Set your story in a shopping mall during Black Friday. The mall should be situated in Amherst, Massachusetts, USA. It should elaborate how a stampede was created and the area was cordoned off. ",3,2,4,2
+"Start your story with someone saying, sarcastically, ""What have I got to be thankful for?""",1,2,5,1
+Write a story in which your character has a plan. They're going to save the turkeys. All of them.,2,1,5,1
+"Write about a character who is back home for the holidays, and finds that nothing has changed.",1,1,4,1
+Write a story about a family gathering to watch the biggest football game of the year.,1,1,5,1
+Write about a Thanksgiving meal from the perspective of someone who is not grateful.,1,2,4,2
+"You're nervous because it's your first time in charge of Thanksgiving dinner, and you could've sworn that the dead turkey in front of you just… squawked? Complete this story in 10 sentences. ",2,3,5,3
+Write a story about a family dinner from the perspective of an in-law who's married into the family.,2,3,4,2
+"Write about a family with a long-standing tradition, whose members all have conflicting origin stories for it.",2,4,4,3
+Write a story in which a character cooks up something to impress someone.,2,1,5,1
+Write a story about two characters who like each other but don’t get a happily-ever-after.,2,2,4,1
+"Set your story on a warm summer evening with a full moon, when everything feels magnetic and your character’s about to meet someone important. Start or end your story with a character finding out the love of their life is actually royalty.",4,3,5,3
+Write about two characters who meet and/or fall in love in a museum. The story should show that the two characters never had a crush/love before.,3,2,5,2
+Write a story about two opposites finding themselves surprisingly attracted to one another. End your story with a kiss at midnight.,2,2,4,2
+"Write about a character who must confess their true feelings by midnight, or risk losing it all.",2,2,5,1
+Write about a character who risks everything to pursue their heart’s desires. The character is somebody looking for love on a reality TV show.,2,1,4,2
+Write about two solo travelers who keep bumping into each other in the most unexpected of places.,1,1,5,1
+"Write about a relationship, either romantic or platonic, that is being affected by jealousy.",2,2,4,1
+Write a story about somebody in love with someone from their past.,1,1,5,1
+"Write about someone asking out an old crush, only to realize their crush doesn’t remember they’ve ever met before.",2,2,4,2
+"Write a love story about an older couple who’ve been together since they were teenagers.  Start your story with one character setting up a romantic dinner, and end it with them looking at a framed wedding photo.",3,3,4,3
+"Write about someone who gets proposed to five times on Christmas Eve. Each time it should be different person. However, at the end the person doesn't like anyone.",3,2,5,2
+Write a romance where your character falls in love with the last person they expected to.,1,2,5,2
+"Write about two people who run rival bakeries, but fall in love during their town’s annual holiday festival.",2,2,4,1
+Write a romance where the characters pretend to be dating each other in order to win a reality show. The romance should involve one partner saving the other from a fire.,3,3,5,3
+"Write about a couple who have just moved to a place that one person loves, and the other hates.",1,2,4,2
+"Write a story about high school sweethearts coming across one another after many, many years apart.",1,2,5,1
+Write a story about a relationship where one person is always running late and the other is constantly kept waiting.,2,2,5,2
+"Write a story about two people in a long-distance relationship, driving to a location mid-way between both their cities.",1,1,5,1
+"Write a story about two unlikely people falling in love. The story should be based on the metaphor: ""Love is a fine wine.""",2,2,5,2
+"Complete the following story in 80 words. You are a zookeeper and a guest keeps using dumb animal puns like ""You are foxy"" and ""You are dino-mite"" around you.",3,3,4,3
+"Complete the following with 5 more lines. In the future, romantic attraction is literal: each person is fitted with an electromagnetic bracelet which, they claim, will pull you to your soulmate. It's the day they turn the magnets on, and you're waiting.",2,3,4,3
+"Write about an art thief who is struggling to commit the perfect heist. Start your story with an unexpected betrayal. Set your story on a sailboat, large or small, and entirely at the mercy of the winds.",3,3,3,4
+"Write about someone who can’t sleep due to jet lag, and decides to set out and explore their new city at night instead. Start your story with one or two characters going for a run.",3,2,5,3
+Write a story about someone going on a life-changing journey. Set your story in a desert town.,2,2,5,2
+"Write about someone finding a treasure in an unexpected place. Set your story in New York, where someone’s been waiting for your character.",3,3,4,2
+"Write a story that hinges on the outcome of a coin flip. Lost in a foreign city where they don’t speak the language, your character uses a translation app to get around, but constantly runs into problems.",4,3,3,3
+"Your character is about to embark on the journey of a lifetime. The story takes place during a long-haul flight, with an open return-date. What happens? Complete this story. It should be hypothetical.",4,4,4,4
+Write about a character who can suddenly see through another person's eyes — literally. Literally means in reality.,2,2,5,2
+Write a story where the power goes out on a spaceship or submarine. Tides rises unfortunately. There is water everywhere but nothing to drink.,3,3,5,3
+"Write a story about friends taking a road trip they've been planning for years. There are three friends with name Ravi, Kiran and Rahul. In the story, they should ride a bike without helmet and get caught. In the story someone should strive for a ""comeback.""",4,3,4,3
+"Write a story set in a world with a dying sun, or where light is a scarce resource.",2,2,5,2
+"Complete the following story in hypothetical sense. It’s the last evening of your vacation and you’re watching the sunset with your friends/partner/family, wishing summer would never end. But just as the sun dips below the horizon, you notice it returning in reverse.",3,3,4,3
+"Start your story with a character looking closely at something, or someone. They can't quite decide if what they're looking at is natural, or man-made.Set your story after aliens have officially arrived on Earth.",4,3,4,3
+A journalist has been granted permission to visit the premises of a lab carrying out top-secret work. They could never have anticipated what they’d find… Complete this in another 4 sentences. ,3,3,5,2
+Write about a character who has access to a powerful new technology before anyone else. The story should show the invention of an algorithm plays an important role.,2,2,3,3
+Write about a character who wakes up in someone else’s clothes — or utterly weird apparel they don’t recognize as their own.,2,2,5,2
+All clocks suddenly stop. Write about what happens next. Set your story beyond our own world.,2,2,5,2
+Write a story about a team tunneling down into the centre of a planet. It should be diagramatically opposite. The story should touch upon the huge radius of the planet. ,3,2,5,3
+Write a science fiction story where all human behavior can be predicted — until your character does something the algorithm did not expect.,3,3,5,2
+Write about a person experiencing the 'overview effect' (a feeling astronauts report having when they first view Earth from outer space).,2,2,5,1
+Write a story set in the dark recesses of space where the two main characters are often at odds with each other in humorous and comedic ways. The story should show adventure in space.,4,3,4,3
+Write a short story in which you try to predict the future — and every prediction you make comes true,2,2,5,2
+Write a story about a person who finds a polaroid camera that seems to predict the future: its pictures show what will happen exactly 5 minutes from the moment you take them. The story should use this camera for a positive setting.,4,3,5,4
+Write about a story in which a character sits down to family dinner and notice that one of your parents has been replaced by a robot. Nobody seems to notice except for you.,3,3,5,3
+"Write a poem with zero punctuation. It should have 4 stanzas, each ending with some gift",3,4,5,4
+"Pick a random number between 0 to 5. Write a poem with that many stanzas. Next pick a random number between 10-20, and each of stanza should have those many words.",4,4,5,4
+Write a poem about wanting something that you can't have.,2,2,5,2
+Write an acrostic poem for the love interest of your story from the point of view of your protagonist.,3,3,4,4
+"Write a story about a family dying for foods. Set your story in a lighthouse surrounded by powerful gale-force winds. Set your story during a month of drought — whether literal, or metaphorical. Include in your story a scene about a family's last meal before a significant change. Start your story with someone saying “I can’t sleep.”",4,5,3,5
+"Write from the POV of a security guard on the night shift, sitting in front of a wall of CCTV feeds. Start or end your story with a character receiving a hug or words of comfort.",4,3,4,3
+"Write a story about someone getting lost, but discovering something they didn’t expect along the way. Set your story in a rosy-pink world where everything is rainbows and unicorns… until it isn’t.",3,4,3,4
+"Write about two friends who were once inseparable, but now find themselves growing apart — or even friends turned enemies.",2,3,4,3
+"Write about a character unknowingly experiencing a “sliding doors” moment. Write your story in two halves; what could have been, and what actually happened.",3,4,3,4
+"Write a story about someone who receives — or makes — a life-changing, anonymous donation. Set your story at an antique roadshow.",3,3,4,3
+Write a story where a character must continue to tell their tale to a listener to avoid unsavory consequences. Start your story with someone entering a taxi and saying ‘follow that car.’,3,4,3,4
+"Write a story where someone says, “Everything is changing.” Start your story with a home alarm system going off.",2,3,4,3
+"Start your story with someone looking at a breathtaking view and getting emotional. Start your story with a character telling their best friend that their spouse is having an affair, only for their friend to “shoot the messenger”.",4,4,4,4
+"Write about someone seeking an oasis in a desert — whether literally, or figuratively. Start your story with the whistle of a kettle. The story should also have a character whose job is to bring water to people.",4,3,4,3
+Start your story with someone robbing a bank and end it with two people driving on an interstate. The story should have someone admitting a secret and end it with someone telling a lie.,4,4,5,4
+"Write about a character who makes a dramatic life change to pursue a goal they’ve secretly always wanted. Start your story with one character telling another, “It doesn’t count if you’re already planning your defeat.”",3,4,4,4
+Write a story that starts with a life-changing event. Start your story with two characters deciding to spend the night in a graveyard.,3,3,5,3
+Write a story around the theme: Be careful what you wish for. It should be a literary fiction story about growing up.,2,2,5,2
+"Write a short story with an unreliable narrator that readers can never quite trust. In the first sentence of your story, have the narrator tell us exactly what's going to happen — but not how it will happen.",3,3,5,3
+Write a story in 2 paragraphs in which the protagonist turns into the antagonist by the end. The protagonist should die in the first paragraph.,2,2,5,2
+"Write a story with the following constraint:
+Title: The Whispering Forest
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""trees"".
+Must include the phrase ""whispers in the wind"".",5,4,5,5
+"Write a story with the following constraint:
+Title: The Forgotten Ruins
+Each paragraph starts with ""The"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""ancient"".
+Must include the phrase ""crumbling stone walls"".",5,4,4,5
+"Write a story with the following constraint:
+Title: The Haunted Manor
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""ghost"".
+Must include the phrase ""chilling presence"".",5,5,5,5
+"Write a story with the following constraint:
+Title: The Lost City
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""discovered"".
+Must include the phrase ""forgotten civilization"".",5,4,5,4
+"Write a story with the following constraint:
+Title: The Whispering Gallery
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""echo"".
+Must include the phrase ""mysterious whispers"".",5,4,5,5
+"Write a story with the following constraint:
+Title: The Hidden Temple
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""sacred"".
+Must include the phrase ""ancient rituals"".",5,4,5,5
+"Write a story with the following constraint:
+Title: The Desolate Castle
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""king"".
+Must include the phrase ""crumbling stone towers"".",5,4,4,5
+"Write a story with the following constraint:
+Title: The Whispering Cavern
+Each paragraph starts with ""The"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""echo"".
+Must include the phrase ""mysterious whispers"".",5,5,4,5
+"Write a story with the following constraint:
+Title: The Enchanted Garden
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""enchanted"".
+Must include the phrase ""blossoming flowers"".",5,5,5,5
+"Write a story with the following constraint:
+Title: The Forgotten Tomb
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""ancient"".
+Must include the phrase ""cracked stone sarcophagus"".",5,4,5,5
+"Write a story with the following constraint:
+Title: The Abandoned Mine
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""miners"".
+Must include the phrase ""dusty tunnels"".",5,5,4,5
+"Write a story with the following constraint:
+Title: The Whispering Woods
+Each paragraph starts with ""The"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""forest"".
+Must include the phrase ""rustling leaves"".",4,5,5,5
+"Write a story with the following constraint:
+Title: The Forgotten Castle
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""royal"".
+Must include the phrase ""crumbling stone battlements"".",4,4,5,4
+"Write a story with the following constraint:
+Title: The Haunted Asylum
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""spirits"".
+Must include the phrase ""haunting whispers in the halls"".",4,4,4,4
+"Write a story with the following constraint:
+Title: The Lost Temple
+Each paragraph starts with ""The"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""ancient"".
+Must include the phrase ""forgotten treasure"".
+Must have a character named ""Elena"".
+Include a mysterious map as a plot element.",5,5,5,4
+"Write a story with the following constraint:
+Title: The Whispering Woods
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 130-140 words.
+Cannot use the word ""silence"".
+Must include the phrase ""ancient trees"".
+Ending line: ""But the secrets of the forest remained hidden.""",5,4,5,4
+"Write a story with the following constraint:
+Title: The Midnight Serenade
+Each paragraph starts with ""The"".
+Total of 3 paragraphs.
+Each paragraph consists of exactly 8 sentences.
+Total word count: 120-130 words.
+Cannot use the word ""night"".
+Must include the phrase ""melancholic melody"".
+Must have a character named ""Aria"".
+Ending line: ""And the song echoed through the night.""",5,5,4,5
+"Write a story with the following constraint:
+Title: The Haunted Manor
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""ghost"".
+Must include the phrase ""creaking floorboards"".
+Must have a character named ""Victor"".
+Ending line: ""And the shadows whispered of long-forgotten tales.""",5,5,5,5
+"Write a story with the following constraint:
+Title: The Crimson Rose
+Each paragraph starts with ""The"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""flower"".
+Must include the phrase ""petals of fire"".
+Must have a character named ""Lillian"".
+Ending line: ""And the rose bloomed amidst the flames.""",4,5,4,5
+"Write a story with the following constraint:
+Title: The Forgotten Castle
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 130-140 words.
+Cannot use the word ""ancient"".
+Must include the phrase ""crumbling walls"".
+Must have a character named ""Thomas"".
+Ending line: ""And the castle whispered tales of old.""",5,5,4,4
+"Write a story with the following constraint:
+Title: The Whispering Woods
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 130-140 words.
+Cannot use the word ""silence"".
+Must include the phrase ""ancient trees"".
+Ending line: ""But the secrets of the forest remained hidden.""",4,5,5,5
+"Write a story with the following constraint:
+Title: The Haunted Manor
+Each paragraph starts with ""The"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Cannot use the word ""ghost"".
+Must include the phrase ""creaking floorboards"".
+Must have a character named ""Victor"".
+Ending line: ""And the shadows whispered of long-forgotten tales.""",5,5,5,5
+"Write a story with the following constraint:
+Title: The Crimson Rose
+Each paragraph starts with ""The"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 150-160 words.
+Cannot use the word ""flower"".
+Must include the phrase ""petals of fire"".
+Must have a character named ""Lillian"".
+Ending line: ""And the rose bloomed amidst the flames.""",5,5,4,5
+"Write a story with the following constraint:
+Title: The Forgotten Castle
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 130-140 words.
+Cannot use the word ""ancient"".
+Must include the phrase ""crumbling walls"".
+Must have a character named ""Thomas"".
+Ending line: ""And the castle whispered tales of old.""",4,5,4,5
+"Write a story with the following constraint:
+Title: The Midnight Serenade
+Each paragraph starts with ""The"".
+Total of 3 paragraphs.
+Each paragraph consists of exactly 8 sentences.
+Total word count: 120-130 words.
+Cannot use the word ""night"".
+Must include the phrase ""melancholic melody"".
+Must have a character named ""Aria"".
+Ending line: ""And the song echoed through the night.""",5,4,4,5
+"Write a story with the following constraint:
+Title: The Enchanted Garden
+Each paragraph starts with ""The"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 140-150 words.
+Must include the phrase ""whispering flowers"".
+Ending line: ""And the garden's secrets bloomed with the dawn.""",3,4,5,4
+"Write a story with the following constraint:
+Each paragraph starts with ""In a"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 130-140 words.
+Must include the phrase ""glimmering starlight"".
+Ending line: ""But the stars held their silent vigil.""",3,4,5,3
+"Write a story with the following constraint:
+Total of 6 paragraphs.
+Each paragraph consists of exactly 8 sentences.
+Total word count: 150-160 words.
+Must include the phrase ""ancient book of spells"".",2,2,5,2
+"Write a story with the following constraint:
+Title: The Forgotten Castle
+Total of 3 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 120-130 words.
+Must include the phrase ""crumbling stone walls"".
+Ending line: ""Yet the castle held its memories.""",3,3,4,3
+"Write a story with the following constraint:
+Each paragraph starts with ""Underneath"".
+Total of 7 paragraphs.
+Each paragraph consists of exactly 4 sentences.
+Total word count: 140-150 words.
+Must include the phrase ""dancing fireflies"".
+Ending line: ""And the night came alive with their light.""",3,3,5,3
+"Write a story with the following constraint:
+Title: The Haunted Manor
+Each paragraph starts with ""Amidst"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 140-150 words.
+Must include the phrase ""echoes of the past"".
+Ending line: ""But the whispers remained, lost in time.""",4,4,5,4
+"Each paragraph starts with ""Beneath the"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+Total word count: 130-140 words.
+Cannot use the word ""hidden"".
+Must include the phrase ""gleaming treasure"".",3,3,5,2
+"Write a story with the following constraint:
+Each paragraph starts with ""In the"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 8 sentences.
+Total word count: 150-160 words.
+Must include the phrase ""enchanted forest"".",3,3,4,3
+"Write a story with the following constraint:
+Title: The Moonlit Grove
+Each paragraph starts with ""Bathed in"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 8 sentences.
+All sentences have exactly 10 words.
+Total word count: 160-170 words.
+Must include the phrase ""silver moonlight"".
+Ending line: ""Under the stars, they found their way home.""",5,5,4,5
+"Write a story with the following constraint:
+Title: The Whispering Winds
+Each paragraph starts with ""Upon the"".
+Total of 7 paragraphs.
+Each paragraph consists of exactly 4 sentences.
+Total word count: 140-150 words.
+Must include the phrase ""whispers of destiny"".",4,4,5,4
+"Write a story with the following constraint:
+Each paragraph starts with ""Amongst the"".
+Total of 8 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 160-170 words.
+Must include the phrase ""mystical aura"".",4,3,5,3
+"Write a story with the following constraint:
+Each paragraph starts with ""Within these"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 150-160 words.
+Must include the phrase ""fading memories"".",3,4,4,3
+"Write a story with the following constraint:
+Title: The Forgotten Path
+Each paragraph starts with ""Lost in"".
+Total of 5 paragraphs.
+Each paragraph consists of exactly 7 sentences.
+All sentences have an even number of words.
+Total word count: 140-150 words.
+Must include the phrase ""whispering winds"".
+Ending line: ""And so they ventured on, into the unknown.""",5,5,4,5
+"Write a story with the following constraint:
+Each paragraph starts with ""Amidst the"".
+Total of 6 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+All sentences have a prime number of words.
+Total word count: 150-160 words.
+Must include the phrase ""silence of the night"".",4,4,5,4
+"Write a story with the following constraint:
+Title: The Whispering Woods
+Each paragraph starts with ""In the heart of"".
+Total of 7 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 155-165 words.
+Cannot use the word ""tree"".
+Must include the phrase ""dappled sunlight"".
+Ending line: ""And so, the secrets of the woods remained hidden.""",5,5,4,5
+"Write a story with the following constraint:
+Each paragraph starts with ""Underneath the"".
+Total of 4 paragraphs.
+Each paragraph consists of exactly 9 sentences.
+Total word count: 145-155 words.
+All sentences have at least one punctuation mark.
+Must include the phrase ""gentle rustling"".
+Ending line: ""In the quietude below, mysteries await discovery.""",5,4,5,5
+"Write a story with the following constraint:
+Title: The Mysterious Island
+Constraint: Each sentence starts with a word that begins with the next letter of the alphabet (e.g., ""A dark and stormy night..."", ""Boldly, the captain set sail..."", ""Cautiously, the crew navigated..."").
+Total of 5 paragraphs.
+Each paragraph consists of exactly 5 sentences.
+Total word count: 200-220 words.
+Must include the phrase ""treacherous terrain"".
+Ending line: ""Zestfully, they zipped up their zest.""",5,5,5,5
+"Write a story with the following constraint:
+Title: The Time Traveler's Dilemma
+Constraint: Each paragraph alternates between past and future tense (e.g., ""I was walking..."", ""I will be running..."", ""I was hiding..."", ""I will be seeking..."").
+Total of 4 paragraphs.
+Each paragraph consists of exactly 6 sentences.
+Total word count: 180-200 words.
+Cannot use the word ""time"".
+Must include the phrase ""clockwork machines"".
+Ending line: ""Fate had finally found me.""",5,5,4,5
+"Write a story with the following constraint:
+Title: The Whispering Walls
+Constraint: Each sentence has exactly 15 words.
+Total of 3 paragraphs.
+Each paragraph consists of exactly 4 sentences.
+Total word count: 180-200 words.
+Must include the phrase ""echoing through eternity"".
+Ending line: ""Secrets were hidden in the whispering walls forever.""",4,4,5,4
+"Write a story with the following constraint:
+
+Title: The Starlight Serenade Each sentence must contain exactly 5 words or exactly 10 words (no exceptions). The story must be written in exactly 4 paragraphs. The first and third paragraphs must contain exactly 5 sentences each. The second and fourth paragraphs must contain exactly 3 sentences each. The story must include the phrase ""cosmic rhythm beats"" exactly twice. The story cannot use the word ""dark"". The final sentence must end with the phrase ""in harmony forever"".
+
+Good luck!",5,5,4,5
