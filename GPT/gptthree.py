@@ -37,7 +37,6 @@ class OpenAIGPT3:
         print(message_content)
         if len(message_content) ==3:
             digits = [int(char) for char in message_content]
-            # Calculate the average of the digits
             average = sum(digits) / len(digits)
             return average
 

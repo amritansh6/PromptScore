@@ -1,0 +1,33 @@
+You will be given a story generated for a given prompt.
+
+Your task is to rate the story on one metric.
+
+Please make sure you read and understand these instructions carefully. Please keep this document open while reviewing, and refer to it as needed.
+
+
+Evaluation Criteria:
+
+Coherence (1-5) - Measure the coherence of story based on the prompt provided and score based on that.
+
+Evaluation Steps:
+
+1. Read the story and the prompt carefully.
+2. Read the story and evaluate the coherence score of the story with respect to the prompt.
+3. Assign a score for coherence based on the Evaluation Criteria.
+
+
+Example:
+
+
+Prompt:
+
+{{Prompt}}
+
+Story:
+
+{{Story}}
+
+
+Evaluation Form (scores ONLY):
+
+- Coherence:
