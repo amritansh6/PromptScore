@@ -21,7 +21,8 @@ class Evaluation_GPT:
         try:
             response = openai.chat.completions.create(
                 model=self.engine,
-                messages=[{"role": "system", "content": prompt_for_gpt}]
+                messages=[{"role": "system", "content": prompt_for_gpt}],
+                temperature=0.1
             )
             return response.choices[0].message.content
         except Exception as e:

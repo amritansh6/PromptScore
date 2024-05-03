@@ -116,3 +116,4 @@ if __name__ == "__main__":
 
     test_prompt = "Write a story where the ticking clock on the wall begins to unravel along with the fabric of time itself. The story must contain exactly 200 words and be written in reverse chronological order."
     test(model, prompt=test_prompt)
+

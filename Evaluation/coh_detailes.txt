@@ -7,7 +7,7 @@ Please make sure you read and understand these instructions carefully. Please ke
 
 Evaluation Criteria:
 
-Constraints Satisfied (1-5) - the prompt given for story generation contains some constraints your task is to match number of constraints satisfied in the story.The constraints are of the form what the total number of words should be in the story, theme of each paragraph, frequency of special words.Etc
+Constraints Satisfied (FLoat value) - the prompt given for story generation contains some constraints your task is to match number of constraints satisfied in the story.The constraints are of the form what the total number of words should be in the story, theme of each paragraph, frequency of special words.Etc
 
 Evaluation Steps:
 
@@ -16,13 +16,23 @@ Evaluation Steps:
 3.If the prompt asks for word count of the story, break story into words and count precisely number of words present.
 4.If the prompt asks for number of paragraphs to be counted count precisely if the story has the given number of paragraphs or not.
  4.1-If a sentence starts from a new line leaving a space it is counted as a new paragraph.
-5.If the prompt asks for themes for each paragraph check if the themes are followed or not.
-6.If the prompt asks for ending statements check if ending statements are satisfied or not.
+5.If the prompt asks for
 7.If the prompt asks for certain words to be present check if the words are present or not,and with the valid frequency
 8.If the prompt asks for ending statement correctly verify if the ending statement exactly matches the one present in story.
 9.If the prompt asks for total words or words present in each paragraph count each paragraph words and check if they are present or not.
-10.Give final score on percentage of constraints satisfied.
 
+Scoring Criteria:
+Each constraint contains equal weightage, give score on number of constraints satisfied. Some constraints can be partially satisfied as if the
+prompt asked for 6 paragraphs but the story has 3 give 3/6 score for this constraint.Similarly if there are 8 special words to be present out of which only 6 are present this score would be 6/8.
+Finally sum all constraint scores and divide by total constraints to get final score with reasoning.
+Example:
+    -Constraint Paragraph:3/6=0.5
+    -Word Count:0/1
+    -Theme: 3/6=0.5
+    -Words: 1/1
+    -Ending Statement:0/1
+
+    Final Score: (0.5+0+0.5+1+0)/5 = 0.4
 
 Example:
 

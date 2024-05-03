@@ -4,7 +4,7 @@ import torch
 from torch import optim
 
 class Trainer:
-    def __init__(self, model, train_loader, val_loader, criterion, num_epochs=10, learning_rate=0.001,checkpoint_dir='checkpoints'):
+    def __init__(self, model, train_loader, val_loader, criterion, num_epochs=10, learning_rate=0.001,checkpoint_dir='checkpoint'):
         self.model = model
         self.train_loader = train_loader
         self.val_loader = val_loader
