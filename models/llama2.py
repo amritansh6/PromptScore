@@ -12,19 +12,19 @@ class LlamaRegressor(nn.Module):
         )
         self.llama = AutoModelForCausalLM.from_pretrained("TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
                                                  device_map="auto",
-                                                 quantization_config=bnb_config)
+                                                 quantization_config=bnb_config,
+                                                 output_hidden_states=True)
         self.mlp = nn.Sequential(
-            nn.Linear(768, 512),
+            nn.Linear(2048, 512).to(dtype=torch.float16),
             nn.ReLU(),
             nn.Dropout(0.1),
-            nn.Linear(512, 3)
+            nn.Linear(512, 3).to(dtype=torch.float16)
         )
 
     def forward(self, input_ids, attention_mask=None, token_type_ids=None):
         attention_mask = torch.zeros_like(input_ids)
         outputs = self.llama(input_ids=input_ids, attention_mask=attention_mask)
-        last_hidden_state = outputs.last_hidden_state
+        last_hidden_state = outputs.hidden_states[-1]
         last_token_representation = last_hidden_state[:, -1, :]
         scores = self.mlp(last_token_representation)
-        #scores = self.mlp(pooled_output)
         return scores

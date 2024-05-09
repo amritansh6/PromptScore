@@ -2,17 +2,18 @@ import argparse
 import csv
 
 import torch
-from transformers import LlamaTokenizer, LlamaForSequenceClassification
+from transformers import LlamaTokenizer, LlamaForSequenceClassification, AutoTokenizer
 
 from data.createDataLoader import getDataset
 from db import prompts_db
 from db.prompts_db import PromptsDb
 from GPT.gptthree import OpenAIGPT3
 
-from models.llama2 import LlamaRegressor  # Ensure you have a suitable LlamaRegressor model defined similar to BertRegressor
+from models.llama2 import LlamaRegressor
 from trainer import Trainer
 
-tokenizer = LlamaTokenizer.from_pretrained('Llama/large')
+tokenizer=AutoTokenizer.from_pretrained("TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
+                                              padding_side="right")
 
 class CsvImporter:
     def __init__(self, csv_file):
