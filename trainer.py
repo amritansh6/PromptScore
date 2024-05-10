@@ -27,6 +27,7 @@ class Trainer:
 
     def load_checkpoint(self, path):
         checkpoint = torch.load(path)
+        self.model.cuda()
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         print(f"Loaded checkpoint '{path}' (epoch {checkpoint['epoch']})")
@@ -70,6 +71,7 @@ class Trainer:
     def evaluate_prompt(self, input_ids):
         self.model.eval()
         #input_ids = tokenizer(prompt, return_tensors='pt', padding=True, truncation=True, max_length=512)['input_ids']
+        input_ids = input_ids.cuda() if torch.cuda.is_available() else input_ids
         with torch.no_grad():
             output = self.model(input_ids)
         return output
