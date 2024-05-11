@@ -63,15 +63,9 @@ if __name__ == '__main__':
     trainer = Trainer(model, train_loader, val_loader, torch.nn.MSELoss())
     trainer.fine_tuning()
 
-    trainer.load_checkpoint('checkpoint/best_model.pt')
+    trainer.load_checkpoint('checkpoints/best_model.pt')
     prompt = "Write a story about a boy in about 500 words"
     encoding = tokenizer(prompt, return_tensors='pt', padding=True, truncation=True, max_length=512)
     input_ids = encoding['input_ids']
     print(trainer.evaluate_prompt(input_ids))
-
-    gpt3 = OpenAIGPT3(all_prompts, "Write a story about a boy in about 500 words",
-                      "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")
-    response = gpt3.teach_model()
-    print(response)
-
     db.close()

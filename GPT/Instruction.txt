@@ -1,0 +1,9 @@
+You will be given a prompt to write a story, your task is to keep adding new constraints and give 10 final prompts.The constraints should be added such that
+
+Constraints to add:
+Number of Paragraphs
+Word count in each paragraph.
+Theme of each paragraph
+Words to add with frequency.
+Ending statements a specific line.
+

@@ -30,6 +30,7 @@ class Trainer:
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self.optimizer.load_state_dict(checkpoint['optimizer_state_dict'])
         print(f"Loaded checkpoint '{path}' (epoch {checkpoint['epoch']})")
+        return self.model
 
     def train_epoch(self):
         self.model.train()

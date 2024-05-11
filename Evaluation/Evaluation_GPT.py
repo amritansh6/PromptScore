@@ -42,5 +42,4 @@ if __name__ == '__main__':
     story=load_prompt("story.txt")
     #print(story)
     evaluator = Evaluation_GPT(prompt, story,"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","coh_detailes.txt")
-
     print(evaluator.evaluate_constraints())

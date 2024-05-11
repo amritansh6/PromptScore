@@ -34,7 +34,6 @@ class OpenAIGPT3:
 
     def get_prompt_score(self, response):
         message_content = response.choices[0].message.content
-        print(message_content)
         if len(message_content) ==3:
             digits = [int(char) for char in message_content]
             average = sum(digits) / len(digits)

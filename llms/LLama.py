@@ -26,3 +26,4 @@ class LLama(LLMInterface):
 if __name__ == '__main__':
     llama=LLama('llama3')
     llama.generate_story('Write a story about a man born in Bhopal')
+
