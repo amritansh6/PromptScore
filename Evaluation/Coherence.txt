@@ -14,20 +14,3 @@ Evaluation Steps:
 1. Read the story and the prompt carefully.
 2. Read the story and evaluate the coherence score of the story with respect to the prompt.
 3. Assign a score for coherence based on the Evaluation Criteria.
-
-
-Example:
-
-
-Prompt:
-
-{{Prompt}}
-
-Story:
-
-{{Story}}
-
-
-Evaluation Form (scores ONLY):
-
-- Coherence:

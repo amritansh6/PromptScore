@@ -16,7 +16,7 @@ class GeneratePrompts:
         return instructions
 
     def call_gpt4_api(self, instructions):
-        prompt_for_gpt = f"{instructions}\n\nStartingPrompt:\n{self.prompt}\n\n Output just the Prompts"
+        prompt_for_gpt = f"{instructions}\n\nStartingPrompt:\n{self.prompt}\n\n Output just the json file"
         try:
             response = openai.chat.completions.create(
                 model=self.engine,

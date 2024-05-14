@@ -1,4 +1,4 @@
-You will be given a prompt to write a story, your task is to keep adding new constraints and give 10 final prompts.The constraints should be added such that
+You will be given a prompt to write a story, your task is to keep adding new constraints and give  10 final prompts in json format without explanation. The constraints should be added in increasing order
 
 Constraints to add:
 Number of Paragraphs
@@ -7,3 +7,8 @@ Theme of each paragraph
 Words to add with frequency.
 Ending statements a specific line.
 
+Example Output format:
+[
+{prompt:"" },
+{prompt:"" }
+]

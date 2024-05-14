@@ -17,7 +17,7 @@ class Evaluation_GPT:
         return instructions
 
     def call_gpt4_api(self, instructions):
-        prompt_for_gpt = f"{instructions}\n\nPrompt:\n{self.prompt}\n\nStory:\n{self.story}\n\nEvaluation Form (scores ONLY):\n- Constraints:"
+        prompt_for_gpt = f"{instructions}\n\nPrompt:\n{self.prompt}\n\nStory:\n{self.story}\n\nEvaluation Form (scores ONLY) Give a final score (1-5):"
         try:
             response = openai.chat.completions.create(
                 model=self.engine,
@@ -32,14 +32,20 @@ class Evaluation_GPT:
         instructions = self.load_instructions(self.file_path)
         return self.call_gpt4_api(instructions)
 
+
 def load_prompt(file_path):
     with open(file_path, 'r') as file:
         instructions = file.read()
     return instructions
 
+
 if __name__ == '__main__':
     prompt=load_prompt("prompt.txt")
     story=load_prompt("story.txt")
-    #print(story)
-    evaluator = Evaluation_GPT(prompt, story,"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","coh_detailes.txt")
-    print(evaluator.evaluate_constraints())
+    scores = []
+    constraints = ["Coherence.txt", "Constraints.txt", "Fluency.txt"]
+    for constraint in constraints:
+        evaluator = Evaluation_GPT(prompt, story,"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", constraint)
+        scores.append(int(evaluator.evaluate_constraints()))
+    print(scores)
+    print("average score is: ", sum(scores)/len(scores))

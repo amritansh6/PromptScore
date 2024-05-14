@@ -1,19 +1,14 @@
 import argparse
 import csv
+import json
 
-import torch
+import matplotlib.pyplot as plt
+from transformers import BertTokenizer
 
 from GPT.generatePrompts import GeneratePrompts
-from data.createDataLoader import getDataset
-from db import prompts_db
-from db.prompts_db import PromptsDb
 from GPT.gptthree import OpenAIGPT3
-from transformers import BertTokenizer, AutoModel, AutoTokenizer
-
+from db.prompts_db import PromptsDb
 from db.store_prompts import StoryPrompts
-from models.bert import BertRegressor
-from models.llama2 import LlamaRegressor
-from trainer import Trainer
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
@@ -55,6 +50,17 @@ def encode_data(data):
     return inputs, labels
 
 
+def plot_graph(db1):
+    x_values = range(1, 11)
+    y_values = []
+    for prompt, final_score in db1.get_prompts():
+        y_values.append(final_score)
+
+    print("len(y_values) ", len(y_values))
+    plt.plot(x_values, y_values)
+    plt.show()
+
+
 if __name__ == '__main__':
     db_name = 'prompts.db'
     csv_file = 'Prompts_Amritansh.csv'
@@ -72,23 +78,31 @@ if __name__ == '__main__':
     prompt = "Write a story about a man born in Bangalore"
 
     generatePrompts = GeneratePrompts(prompt, "sk-proj-jzjcetv6c5nhrjhLEQ9dT3BlbkFJTKTRbNgcCBsqBhPIQ65u",
-                                      '/Users/amritanshmishra/PycharmProjects/PromptScore/GPT/Instruction.txt')
+                                      './GPT/Instruction.txt')
     instructions = generatePrompts.load_instructions()
     message = generatePrompts.call_gpt4_api(instructions)
-    message_array = message.split('\n\n')
-    for message in message_array:
-        print(message)
+    message = message[7:-3]  # removing ```json chars
+    message_array = []
+
+    with open("prompts.json", "w") as file:
+        file.write(message)
+
+    with open("prompts.json", "r") as file:
+        data = json.load(file)
+
+    for prompt in data:
+        message_array.append(prompt["prompt"])
 
     db_name_story = 'prompts_story.db'
     db1 = StoryPrompts(db_name_story)
-    # for prompt in message_array:
-    #     gpt3=OpenAIGPT3(all_prompts,prompt,'sk-proj-jzjcetv6c5nhrjhLEQ9dT3BlbkFJTKTRbNgcCBsqBhPIQ65u')
-    #     response=gpt3.teach_model()
-    #     prompt_score=gpt3.get_prompt_score(response)
-    #     print(prompt_score)
-    #     db1.add_prompt(prompt, prompt_score)
+    for prompt in message_array:
+        gpt3 = OpenAIGPT3(all_prompts, prompt, 'sk-proj-jzjcetv6c5nhrjhLEQ9dT3BlbkFJTKTRbNgcCBsqBhPIQ65u')
+        response = gpt3.teach_model()
+        prompt_score = gpt3.get_prompt_score(response)
+        # print(prompt, prompt_score)
+        db1.add_prompt(prompt, prompt_score)
 
-    # print(message)
+    plot_graph(db1)
 
     db.close()
     db1.close()

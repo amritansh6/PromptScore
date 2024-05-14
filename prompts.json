@@ -1,0 +1,33 @@
+
+[
+    {
+        "prompt": "Write a 1-paragraph story about a man born in Bangalore. The paragraph should have exactly 100 words."
+    },
+    {
+        "prompt": "Write a 2-paragraph story about a man born in Bangalore. Each paragraph should have exactly 120 words. The first paragraph should introduce the man and Bangalore. The second paragraph should describe a significant event in his life."
+    },
+    {
+        "prompt": "Write a 3-paragraph story about a man born in Bangalore. Each paragraph should have exactly 150 words. The first paragraph should introduce the man, the second should describe his dreams, and the third should detail his achievements. Include the word 'determination' twice in the story."
+    },
+    {
+        "prompt": "Write a 4-paragraph story about a man born in Bangalore. Each paragraph should have exactly 200 words. The first paragraph should introduce the man, the second should describe his challenges, the third should detail his journey, and the fourth should celebrate his success. Include the words 'perseverance' and 'courage' three times each throughout the story."
+    },
+    {
+        "prompt": "Write a 5-paragraph story about a man born in Bangalore. Each paragraph should have exactly 250 words. The first paragraph should introduce the man, the second should describe his family background, the third should detail his education, the fourth should narrate his career, and the fifth should discuss his retirement. Include the words 'legacy', 'wisdom', and 'family' four times each throughout the story."
+    },
+    {
+        "prompt": "Write a 6-paragraph story about a man born in Bangalore. Each paragraph should have exactly 300 words. The first paragraph should introduce the man, the second should describe his early life, the third should detail his ambitions, the fourth should narrate his struggles, the fifth should celebrate his achievements, and the sixth should reflect on his legacy. Include the words 'inspiration', 'challenge', and 'achievement' five times each throughout the story. The story should end with the line 'And thus, a legend was born in the heart of Bangalore.'"
+    },
+    {
+        "prompt": "Write a 7-paragraph story about a man born in Bangalore. Each paragraph should have exactly 350 words. The first paragraph should introduce the man, the second should describe his personality, the third should detail his hobbies, the fourth should narrate his professional life, the fifth should discuss his personal life, the sixth should celebrate his contributions to society, and the seventh should reflect on his peaceful old age. Include the words 'compassion', 'dedication', and 'integrity' six times each throughout the story. The story should end with the line 'In the quiet streets of Bangalore, his legacy whispers in the wind.'"
+    },
+    {
+        "prompt": "Write an 8-paragraph story about a man born in Bangalore. Each paragraph should have exactly 400 words. The first paragraph should introduce the man, the second should describe his birthplace, the third should detail his education, the fourth should narrate his early career, the fifth should discuss his mid-career challenges and achievements, the sixth should celebrate his late career and retirement, the seventh should reflect on his personal philosophy, and the eighth should conclude with his impact on the next generation. Include the words 'innovation', 'leadership', and 'humility' seven times each throughout the story. The story should end with the line 'His footsteps in Bangalore paved the way for a brighter future.'"
+    },
+    {
+        "prompt": "Write a 9-paragraph story about a man born in Bangalore. Each paragraph should have exactly 450 words. The first paragraph should introduce the man, the second should describe his childhood, the third should detail his teenage years, the fourth should narrate his college life, the fifth should discuss his early professional life, the sixth should celebrate his peak career moments, the seventh should reflect on his personal life and relationships, the eighth should discuss his retirement and hobbies, and the ninth should conclude with his philosophical reflections on life. Include the words 'passion', 'growth', and 'reflection' eight times each throughout the story. The story should end with the line 'From the bustling streets of Bangalore to the quiet of his study, his journey was one of profound growth and reflection.'"
+    },
+    {
+        "prompt": "Write a 10-paragraph story about a man born in Bangalore. Each paragraph should have exactly 500 words. The first paragraph should introduce the man, the second should describe his lineage and family history, the third should detail his early childhood, the fourth should narrate his adolescence, the fifth should discuss his university years, the sixth should celebrate his early career, the seventh should reflect on his mid-career challenges and achievements, the eighth should discuss his late career and preparations for retirement, the ninth should celebrate his retirement and legacy, and the tenth should conclude with his final thoughts and wisdoms. Include the words 'tradition', 'innovation', and 'legacy' nine times each throughout the story. The story should end with the line 'In the heart of Bangalore, his story remains a beacon of tradition, innovation, and enduring legacy.'"
+    }
+]

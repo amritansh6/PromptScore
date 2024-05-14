@@ -20,32 +20,3 @@ Evaluation Steps:
 7.If the prompt asks for certain words to be present check if the words are present or not,and with the valid frequency
 8.If the prompt asks for ending statement correctly verify if the ending statement exactly matches the one present in story.
 9.If the prompt asks for total words or words present in each paragraph count each paragraph words and check if they are present or not.
-
-Scoring Criteria:
-Each constraint contains equal weightage, give score on number of constraints satisfied. Some constraints can be partially satisfied as if the
-prompt asked for 6 paragraphs but the story has 3 give 3/6 score for this constraint.Similarly if there are 8 special words to be present out of which only 6 are present this score would be 6/8.
-Finally sum all constraint scores and divide by total constraints to get final score with reasoning.
-Example:
-    -Constraint Paragraph:3/6=0.5
-    -Word Count:0/1
-    -Theme: 3/6=0.5
-    -Words: 1/1
-    -Ending Statement:0/1
-
-    Final Score: (0.5+0+0.5+1+0)/5 = 0.4
-
-Example:
-
-
-Prompt:
-
-{{Prompt}}
-
-Story:
-
-{{Story}}
-
-
-Evaluation Form explain the reasoning behind the score also:
-
-- Constraints:
