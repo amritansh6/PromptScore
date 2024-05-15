@@ -1,22 +1,28 @@
+import matplotlib.pyplot as plt
 from llamaapi import LlamaAPI
 
 from Evaluation.Evaluation_GPT import Evaluation_GPT
 from LLMInterface import LLMInterface
-import matplotlib.pyplot as plt
 from db.store_prompts import StoryPrompts
 
 
-class Gemma(LLMInterface):
+class Alpaca(LLMInterface):
     def __init__(self, model_name: str):
         self.model_name = model_name
         self.llama = LlamaAPI('LL-WIZiIHXM9Q7hJrAdIukwRCIT1XZmbZSAv4I1OqZbECJZOrNyf1q2aaPcwcKpCWCe')
 
     def generate_story(self, prompt: str) -> str:
         api_request_json = {
-            "model": "gemma-7b",
+            "model": "mistral-7b-instruct",
             "messages": [
-                {"role": "system",
-                 "content": prompt}
+                {
+                    "role": "system",
+                    "content": "You are a creative story writer. Generate a story based on the following prompt."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
             ]
         }
         response = self.llama.run(api_request_json)
@@ -24,7 +30,8 @@ class Gemma(LLMInterface):
 
 
 if __name__ == '__main__':
-    llama=Gemma('gemma-7b')
+    llama = Alpaca('alpaca-7b')
+    llama.generate_story('Write a story about a man born in Bhopal')
 
     db_name_story = '../prompts_story.db'
     db1 = StoryPrompts(db_name_story)
@@ -48,7 +55,7 @@ if __name__ == '__main__':
             scores.append(score)
         print(scores)
         x_values.append(i)
-        y_values.append(sum(scores)/len(scores))
+        y_values.append(sum(scores) / len(scores))
         i += 1
 
     plt.xticks(x_values)

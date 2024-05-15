@@ -1,30 +1,34 @@
-from llamaapi import LlamaAPI
+import anthropic
+from matplotlib import pyplot as plt
 
 from Evaluation.Evaluation_GPT import Evaluation_GPT
-from LLMInterface import LLMInterface
-import matplotlib.pyplot as plt
 from db.store_prompts import StoryPrompts
+from llms.LLMInterface import LLMInterface
 
 
-class Gemma(LLMInterface):
+class Anthropic(LLMInterface):
     def __init__(self, model_name: str):
         self.model_name = model_name
-        self.llama = LlamaAPI('LL-WIZiIHXM9Q7hJrAdIukwRCIT1XZmbZSAv4I1OqZbECJZOrNyf1q2aaPcwcKpCWCe')
+        self.client = anthropic.Anthropic(
+            api_key="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",
+        )
 
     def generate_story(self, prompt: str) -> str:
-        api_request_json = {
-            "model": "gemma-7b",
-            "messages": [
-                {"role": "system",
-                 "content": prompt}
+        message = self.client.messages.create(
+            model="claude-3-opus-20240229",
+            system="Generate a creative story based on a given prompt",
+            max_tokens=1000,
+            messages=[
+                {"role": "user", "content": prompt}
             ]
-        }
-        response = self.llama.run(api_request_json)
-        return response.json()['choices'][0]['message']['content']
+        )
+
+        return message.content[0].text
 
 
 if __name__ == '__main__':
-    llama=Gemma('gemma-7b')
+    claud = Anthropic('claude-3')
+    # claud.generate_story('Write a story about a man born in Bhopal')
 
     db_name_story = '../prompts_story.db'
     db1 = StoryPrompts(db_name_story)
@@ -34,7 +38,7 @@ if __name__ == '__main__':
     i = 1
 
     for prompt, final_score in db1.get_prompts():
-        story = llama.generate_story(prompt)
+        story = claud.generate_story(prompt)
 
         scores = []
         constraints = ["../Evaluation/Coherence.txt", "../Evaluation/Constraints.txt", "../Evaluation/Fluency.txt"]
@@ -46,9 +50,11 @@ if __name__ == '__main__':
                 print(f"An error occurred: {e}")
                 score = 3  # taking average score
             scores.append(score)
+
+        print(story)
         print(scores)
         x_values.append(i)
-        y_values.append(sum(scores)/len(scores))
+        y_values.append(sum(scores) / len(scores))
         i += 1
 
     plt.xticks(x_values)

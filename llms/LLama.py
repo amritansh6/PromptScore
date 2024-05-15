@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
     x_values = []
     y_values = []
-    i = 0
+    i = 1
 
     for prompt, final_score in db1.get_prompts():
         story = llama.generate_story(prompt)
@@ -52,6 +52,7 @@ if __name__ == '__main__':
         y_values.append(sum(scores)/len(scores))
         i += 1
 
+    plt.xticks(x_values)
     plt.plot(x_values, y_values)
     plt.show()
 
