@@ -3,6 +3,7 @@ from matplotlib import pyplot as plt
 
 from Evaluation.Evaluation_GPT import Evaluation_GPT
 from db.store_prompts import StoryPrompts
+from keys import Keys
 from llms.LLMInterface import LLMInterface
 
 
@@ -10,7 +11,7 @@ class Anthropic(LLMInterface):
     def __init__(self, model_name: str):
         self.model_name = model_name
         self.client = anthropic.Anthropic(
-            api_key="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",
+            api_key=Keys.ANTHROPIC_API,
         )
 
     def generate_story(self, prompt: str) -> str:
@@ -43,7 +44,7 @@ if __name__ == '__main__':
         scores = []
         constraints = ["../Evaluation/Coherence.txt", "../Evaluation/Constraints.txt", "../Evaluation/Fluency.txt"]
         for constraint in constraints:
-            evaluator = Evaluation_GPT(prompt, story, "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", constraint)
+            evaluator = Evaluation_GPT(prompt, story, Keys.GPT_KEY, constraint)
             try:
                 score = int(evaluator.evaluate_constraints())
             except Exception as e:

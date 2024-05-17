@@ -4,12 +4,13 @@ from llamaapi import LlamaAPI
 from Evaluation.Evaluation_GPT import Evaluation_GPT
 from LLMInterface import LLMInterface
 from db.store_prompts import StoryPrompts
+from keys import Keys
 
 
 class Alpaca(LLMInterface):
     def __init__(self, model_name: str):
         self.model_name = model_name
-        self.llama = LlamaAPI('LL-WIZiIHXM9Q7hJrAdIukwRCIT1XZmbZSAv4I1OqZbECJZOrNyf1q2aaPcwcKpCWCe')
+        self.llama = LlamaAPI(Keys.LLAMA_API)
 
     def generate_story(self, prompt: str) -> str:
         api_request_json = {
@@ -46,7 +47,7 @@ if __name__ == '__main__':
         scores = []
         constraints = ["../Evaluation/Coherence.txt", "../Evaluation/Constraints.txt", "../Evaluation/Fluency.txt"]
         for constraint in constraints:
-            evaluator = Evaluation_GPT(prompt, story, "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", constraint)
+            evaluator = Evaluation_GPT(prompt, story, Keys.GPT_KEY, constraint)
             try:
                 score = int(evaluator.evaluate_constraints())
             except Exception as e:

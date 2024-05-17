@@ -9,6 +9,7 @@ from GPT.generatePrompts import GeneratePrompts
 from GPT.gptthree import OpenAIGPT3
 from db.prompts_db import PromptsDb
 from db.store_prompts import StoryPrompts
+from keys import Keys
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
@@ -77,7 +78,7 @@ if __name__ == '__main__':
     prompt_scores = []
     prompt = "Write a story about a man born in Bangalore"
 
-    generatePrompts = GeneratePrompts(prompt, "sk-proj-jzjcetv6c5nhrjhLEQ9dT3BlbkFJTKTRbNgcCBsqBhPIQ65u",
+    generatePrompts = GeneratePrompts(prompt, Keys.GPT_KEY,
                                       './GPT/Instruction.txt')
     instructions = generatePrompts.load_instructions()
     message = generatePrompts.call_gpt4_api(instructions)
@@ -96,7 +97,7 @@ if __name__ == '__main__':
     db_name_story = 'prompts_story.db'
     db1 = StoryPrompts(db_name_story)
     for prompt in message_array:
-        gpt3 = OpenAIGPT3(all_prompts, prompt, 'sk-proj-jzjcetv6c5nhrjhLEQ9dT3BlbkFJTKTRbNgcCBsqBhPIQ65u')
+        gpt3 = OpenAIGPT3(all_prompts, prompt, Keys.GPT_KEY)
         response = gpt3.teach_model()
         prompt_score = gpt3.get_prompt_score(response)
         # print(prompt, prompt_score)

@@ -1,5 +1,7 @@
 import openai
 
+from keys import Keys
+
 
 class Evaluation_GPT:
     def __init__(self, prompt, story, api_key, file_path):
@@ -45,7 +47,7 @@ if __name__ == '__main__':
     scores = []
     constraints = ["Coherence.txt", "Constraints.txt", "Fluency.txt"]
     for constraint in constraints:
-        evaluator = Evaluation_GPT(prompt, story,"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", constraint)
+        evaluator = Evaluation_GPT(prompt, story, Keys.GPT_KEY, constraint)
         scores.append(int(evaluator.evaluate_constraints()))
     print(scores)
     print("average score is: ", sum(scores)/len(scores))

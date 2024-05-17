@@ -4,12 +4,13 @@ from matplotlib import pyplot as plt
 from Evaluation.Evaluation_GPT import Evaluation_GPT
 from LLMInterface import LLMInterface
 from db.store_prompts import StoryPrompts
+from keys import Keys
 
 
 class LLama(LLMInterface):
     def __init__(self, model_name: str):
         self.model_name = model_name
-        self.llama = LlamaAPI('LL-pSogkDynoNL7YsWcAr8o1jvUyeUjjG2pOvpwnTb7zdymyLbKLTEf147YevkbDuZI')
+        self.llama = LlamaAPI(Keys.LLAMA_API)
 
     def generate_story(self, prompt: str) -> str:
         api_request_json = {
@@ -20,7 +21,6 @@ class LLama(LLMInterface):
             ]
         }
         response = self.llama.run(api_request_json)
-        print(response)
         return response.json()['choices'][0]['message']['content']
 
 
@@ -40,7 +40,7 @@ if __name__ == '__main__':
         scores = []
         constraints = ["../Evaluation/Coherence.txt", "../Evaluation/Constraints.txt", "../Evaluation/Fluency.txt"]
         for constraint in constraints:
-            evaluator = Evaluation_GPT(prompt, story, "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", constraint)
+            evaluator = Evaluation_GPT(prompt, story, Keys.GPT_KEY, constraint)
             try:
                 score = int(evaluator.evaluate_constraints())
             except Exception as e:
