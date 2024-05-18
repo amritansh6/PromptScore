@@ -1,5 +1,5 @@
-```markdown
-# Prompt Evaluation Tool
+
+##### Prompt Evaluation Tool
 
 ## Overview
 This project offers a suite of tools designed for evaluating and fine-tuning LLama models in the context of prompt scoring. It features scripts for adding base prompts with constraints to a database, fine-tuning models, generating performance graphs, and performing detailed comparisons between models.
@@ -20,9 +20,6 @@ git clone [repository-url]
 # Navigate to the project directory
 cd [project-directory]
 ```
-
-### Database Setup
-The project comes with a pre-populated database to help you quickly start generating graphs and testing functionalities. Ensure the database is configured and connected correctly before proceeding.
 
 ## Usage
 
