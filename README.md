@@ -1,12 +1,12 @@
-###Project README
-##Overview
+Project README
+Overview
 This project provides a comprehensive suite of tools for evaluating and fine-tuning prompt scoring models using LLama. It includes scripts for adding base prompts with constraints to a database, fine-tuning LLama models, generating performance graphs, and comparing multiple models based on specified criteria.
 
-##Getting Started
+Getting Started
 Prerequisites
 Ensure you have Python 3 installed on your system. You can download it from Python's official website.
 
-##Installation
+Installation
 Clone this repository to your local machine using:
 
 bash
@@ -55,3 +55,4 @@ This will execute comparisons and generate output based on the predefined criter
 
 Support
 For any issues or questions, please refer to the documentation or contact the project maintainer.
+
