@@ -24,7 +24,7 @@ cd [project-directory]
 ## Usage
 
 ### Adding Base Prompts
-To add a new base prompt and append constraints which are then stored in the database for evaluation:
+To add a new base prompt and append constraints which are then stored in the database for evaluation: For your evaluation we already have the prmompts and there scores stored in Prompts DB.
 
 ```bash
 python3 PromptScore.py
