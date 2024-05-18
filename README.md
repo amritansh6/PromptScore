@@ -2,7 +2,7 @@
 # Prompt Score
 
 ## Overview
-This project offers a suite of tools designed for evaluating and fine-tuning LLama models in the context of prompt scoring. It features scripts for adding base prompts with constraints to a database, fine-tuning models, generating performance graphs, and performing detailed comparisons between models.
+This project offers a suite of tools designed for evaluating and fine-tuning LLama models in the context of prompt scoring. It features scripts for adding base prompts with constraints to a database, fine-tuning models, generating performance graphs, and performing detailed comparisons between models. The code requires API keys which can be added to the keys.py file. 
 
 ## Getting Started
 
